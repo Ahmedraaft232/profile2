@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    height: 10000px;
+    height: 100vh;
 }
 
 .navbar {
@@ -164,11 +164,11 @@ hr:empty {
     background-color: var(--green-color);
 }
 
-.services {
+/* .services {
     min-height: 500px;
     /* background-color: #126b68; */
 
-}
+
 
 .services h2 {
     color: var(--dark-color);
@@ -186,22 +186,30 @@ hr:empty {
     }
 }
 
+
 .card {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
-    width: 600px;
+    width: 500px;
     flex-wrap: wrap;
+    /* margin: 10px 0; */
+
 }
 
-@media screen and (max-device-width: 640px) {
+
+@media (max-width: 768px) {
     .card {
         display: block;
         width: 300px;
         padding: 20px;
         margin: 10px 0;
+        /* background-color: red; */
     }
 }
+
+
+
 
 .card svg {
     color: #126b68;
@@ -209,4 +217,34 @@ hr:empty {
 
 .card .card-body p {
     text-transform: capitalize;
+}
+
+.new-features {
+    border-bottom: 2px solid;
+    margin-top: 50px;
+}
+
+.contact-us h2 {
+    color: var(--dark-color);
+    font-size: 140px;
+    /* opacity: 0.4; */
+    text-shadow: 9px 5px 9px var(--green-color);
+    margin-top: 20px;
+
+}
+
+@media screen and (max-device-width: 640px) {
+    .contact-us h2 {
+        font-size: 90px;
+        margin-left: -5px;
+        /* margin: 10px 0; */
+    }
+}
+
+.end {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--green-color);
 }
