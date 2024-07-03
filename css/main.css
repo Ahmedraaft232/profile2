@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
@@ -247,4 +249,35 @@ hr:empty {
 
 footer {
     background-color: var(--green-color);
+}
+
+.area {
+    position: relative;
+}
+
+.area label {
+    color: var(--dark-color);
+
+    /* opacity: 0.4; */
+    text-shadow: 3px 5px 6px var(--green-color);
+    font-family: "Wittgenstein", serif;
+}
+
+.area textarea {
+    outline: 2px solid red;
+    width: 500px;
+    position: relative;
+    left: 30%;
+
+}
+
+@media (max-width: 768px) {
+
+    .area textarea {
+        width: 100%;
+        left: 0;
+        margin: 20px 0;
+
+
+    }
 }
